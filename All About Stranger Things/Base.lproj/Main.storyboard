@@ -1,24 +1,336 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Courier.ttc">
+            <string>Courier</string>
+            <string>Courier-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="All_About_Stranger_Things" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stranger Things Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Psf-re-YNS">
+                                <rect key="frame" x="0.0" y="232.5" width="375" height="202.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="202.5" id="8LA-VJ-Von"/>
+                                    <constraint firstAttribute="width" constant="375" id="bvM-EQ-hKU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALL ABOUT " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubw-fZ-Hha">
+                                <rect key="frame" x="52" y="203" width="270.5" height="45"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="45"/>
+                                <color key="textColor" red="0.61232560873031616" green="0.15239658951759338" blue="0.12111978977918625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIl-vC-dBk">
+                                <rect key="frame" x="278" y="569" width="81" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="81" id="WcP-0h-HrF"/>
+                                    <constraint firstAttribute="height" constant="56" id="xRQ-a9-vPh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="17"/>
+                                <state key="normal" title="Next" backgroundImage="Red Arrow Forward">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="tp1-I4-PRe" kind="show" id="iGH-zz-ZKf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ubw-fZ-Hha" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Eg-MO-BO6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PIl-vC-dBk" secondAttribute="bottom" constant="42" id="VbS-C0-cZa"/>
+                            <constraint firstItem="Psf-re-YNS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YL1-Zg-eZ6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PIl-vC-dBk" secondAttribute="trailing" constant="16" id="k1l-Wb-D4S"/>
+                            <constraint firstItem="Psf-re-YNS" firstAttribute="top" secondItem="ubw-fZ-Hha" secondAttribute="bottom" constant="-15.5" id="wjk-So-Kdo"/>
+                            <constraint firstItem="Psf-re-YNS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yW4-2t-Owx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="276" y="134"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SAI-32-JsS">
+            <objects>
+                <viewController id="tp1-I4-PRe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oad-D9-dEC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6WA-JZ-01C">
+                                <rect key="frame" x="278" y="569" width="81" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="81" id="2dd-Ir-4tb"/>
+                                    <constraint firstAttribute="height" constant="56" id="VGv-2F-3Xs"/>
+                                    <constraint firstAttribute="width" constant="81" id="YN3-aG-tHt"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="56" id="xr5-5h-ogQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="17"/>
+                                <state key="normal" title="Next" backgroundImage="Red Arrow Forward">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="qje-QZ-YIV" kind="show" id="1EY-hm-CiP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="17" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ip2-5f-bU7">
+                                <rect key="frame" x="37.5" y="95" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="98w-eO-6iz"/>
+                                    <constraint firstAttribute="height" constant="300" id="zQs-h3-tRW"/>
+                                </constraints>
+                                <string key="text">This thrilling Netflix original drama stars Golden Globe-winning actress Winona Ryder as Joyce Byers, who lives in a small Indiana town in 1983 -- inspired by a time when tales of science fiction captivated audiences. When Joyce's 12-year-old son, Will, goes missing, she launches a terrifying investigation into his disappearance with local authorities. As they search for answers, they unravel a series of extraordinary mysteries involving secret government experiments, unnerving supernatural forces, and a very unusual little girl.
+</string>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iCm-GS-ElJ">
+                                <rect key="frame" x="16" y="569" width="81" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="81" id="Kx1-Rd-ec0"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="56" id="MMz-xm-7Z5"/>
+                                    <constraint firstAttribute="height" constant="56" id="O5U-w3-HJe"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="81" id="elr-4H-dgy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="17"/>
+                                <state key="normal" title="Back" backgroundImage="Red Arrow Back">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Azw-2G-hyv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUMMARY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZN-3T-xp3">
+                                <rect key="frame" x="52.5" y="30" width="270.5" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="ZRR-Xk-8k0"/>
+                                    <constraint firstAttribute="width" constant="270.5" id="v1K-8g-LvM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="40"/>
+                                <color key="textColor" red="0.61232560869999997" green="0.15239658950000001" blue="0.1211197898" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ip2-5f-bU7" firstAttribute="top" secondItem="GZN-3T-xp3" secondAttribute="bottom" constant="10" id="9nX-zb-b7a"/>
+                            <constraint firstItem="GZN-3T-xp3" firstAttribute="top" secondItem="SBh-Pc-2hM" secondAttribute="top" constant="10" id="DjC-pP-fNh"/>
+                            <constraint firstItem="SBh-Pc-2hM" firstAttribute="bottom" secondItem="6WA-JZ-01C" secondAttribute="bottom" constant="42" id="Fn7-iW-zG9"/>
+                            <constraint firstItem="iCm-GS-ElJ" firstAttribute="leading" secondItem="SBh-Pc-2hM" secondAttribute="leading" constant="16" id="NNE-pv-0Wq"/>
+                            <constraint firstItem="SBh-Pc-2hM" firstAttribute="trailing" secondItem="6WA-JZ-01C" secondAttribute="trailing" constant="16" id="W9f-1C-CJZ"/>
+                            <constraint firstItem="GZN-3T-xp3" firstAttribute="centerX" secondItem="oad-D9-dEC" secondAttribute="centerX" id="WPi-Nu-4wn"/>
+                            <constraint firstItem="Ip2-5f-bU7" firstAttribute="centerX" secondItem="oad-D9-dEC" secondAttribute="centerX" id="vPM-7w-im8"/>
+                            <constraint firstItem="SBh-Pc-2hM" firstAttribute="bottom" secondItem="iCm-GS-ElJ" secondAttribute="bottom" constant="42" id="zFy-EB-ebf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SBh-Pc-2hM"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bu3-cu-MVR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="993" y="134"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lj2-NM-kLy">
+            <objects>
+                <viewController id="qje-QZ-YIV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Es2-7x-Qhz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Z1-cf-OBP">
+                                <rect key="frame" x="278" y="569" width="81" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="81" id="cSk-C9-N8S"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="56" id="qZr-Jy-Er3"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="81" id="wYs-kp-Ggq"/>
+                                    <constraint firstAttribute="height" constant="56" id="xcD-IC-1we"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="17"/>
+                                <state key="normal" title="Next" backgroundImage="Red Arrow Forward">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vmS-hP-5Rc" kind="show" id="abI-TS-CYI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pp4-Tn-5C7">
+                                <rect key="frame" x="16" y="569" width="81" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="56" id="0Xc-QG-uKy"/>
+                                    <constraint firstAttribute="height" constant="56" id="MpT-zO-DRY"/>
+                                    <constraint firstAttribute="width" constant="81" id="Pc4-fk-Nb4"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="81" id="guK-wW-hJ3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="17"/>
+                                <state key="normal" title="Back" backgroundImage="Red Arrow Back">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="tp1-I4-PRe" kind="show" id="d3c-gS-MJn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAST" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHl-TV-7ll">
+                                <rect key="frame" x="52" y="30" width="270.5" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="3Bm-cS-ump"/>
+                                    <constraint firstAttribute="width" constant="270.5" id="QcO-n1-Fj9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="40"/>
+                                <color key="textColor" red="0.61232560869999997" green="0.15239658950000001" blue="0.1211197898" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stranger Things Cast" translatesAutoresizingMaskIntoConstraints="NO" id="u3c-wo-MTw">
+                                <rect key="frame" x="34" y="101" width="306" height="211"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="211" id="g04-jD-CTW"/>
+                                    <constraint firstAttribute="width" constant="306" id="p6J-TI-zVR"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="9" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOP-Rw-xcN">
+                                <rect key="frame" x="37" y="322" width="300" height="166"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="oMb-0g-9Zu"/>
+                                    <constraint firstAttribute="height" constant="166" id="s49-Wr-MUM"/>
+                                </constraints>
+                                <string key="text">Row 1 Left to Right: Shannon Purser (Barb), Natalia Dyer (Nancy), Charlie Heaton (Jonathon), Joe Keery (Steve), Finn Wolfhard (Mike), Millie Bobby Brown (Eleven). Row 2 Left to Right:  Gaten Matarazzo (Dustin), Noah Schnapp (Will), Caleb McLaughlin (Lucas).</string>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NHl-TV-7ll" firstAttribute="top" secondItem="rg6-ck-hiG" secondAttribute="top" constant="10" id="1Ic-6M-6Ki"/>
+                            <constraint firstItem="rg6-ck-hiG" firstAttribute="trailing" secondItem="0Z1-cf-OBP" secondAttribute="trailing" constant="16" id="3hw-0a-MzS"/>
+                            <constraint firstItem="u3c-wo-MTw" firstAttribute="top" secondItem="NHl-TV-7ll" secondAttribute="bottom" constant="16" id="8Rq-NS-lIr"/>
+                            <constraint firstItem="Pp4-Tn-5C7" firstAttribute="leading" secondItem="rg6-ck-hiG" secondAttribute="leading" constant="16" id="Jgc-U1-i1B"/>
+                            <constraint firstItem="QOP-Rw-xcN" firstAttribute="centerX" secondItem="Es2-7x-Qhz" secondAttribute="centerX" id="QQA-6t-uX8"/>
+                            <constraint firstItem="NHl-TV-7ll" firstAttribute="centerX" secondItem="Es2-7x-Qhz" secondAttribute="centerX" id="Vei-om-iv8"/>
+                            <constraint firstItem="QOP-Rw-xcN" firstAttribute="top" secondItem="u3c-wo-MTw" secondAttribute="bottom" constant="10" id="XIi-7h-KoT"/>
+                            <constraint firstItem="rg6-ck-hiG" firstAttribute="bottom" secondItem="0Z1-cf-OBP" secondAttribute="bottom" constant="42" id="Z6O-rP-fFQ"/>
+                            <constraint firstItem="u3c-wo-MTw" firstAttribute="centerX" secondItem="Es2-7x-Qhz" secondAttribute="centerX" id="dPO-lB-BBU"/>
+                            <constraint firstItem="rg6-ck-hiG" firstAttribute="bottom" secondItem="Pp4-Tn-5C7" secondAttribute="bottom" constant="42" id="zbH-ar-33T"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rg6-ck-hiG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SnQ-UB-OmC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1693.5999999999999" y="133.5832083958021"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="t8M-2x-fZa">
+            <objects>
+                <viewController id="vmS-hP-5Rc" customClass="ViewController" customModule="All_About_Stranger_Things" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hJv-az-Urj" customClass="UILabel">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="klp-xA-edU">
+                                <rect key="frame" x="16" y="569" width="81" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="1yv-IF-r6A"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="81" id="N8T-q6-nj7"/>
+                                    <constraint firstAttribute="width" constant="81" id="dH0-xS-hCz"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="56" id="gTS-AH-hKa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="17"/>
+                                <state key="normal" title="Back" backgroundImage="Red Arrow Back">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="qje-QZ-YIV" kind="show" id="4LE-t0-D1n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="em8-AE-xsP">
+                                <rect key="frame" x="278" y="569" width="81" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="7mU-tG-KAm"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="56" id="HMp-Kv-blO"/>
+                                    <constraint firstAttribute="width" constant="81" id="ShC-Nb-jkm"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="81" id="ccg-So-MQh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="17"/>
+                                <state key="normal" title="Next" backgroundImage="Red Arrow Forward">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Ngg-Nr-SCq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LzS-NF-99M">
+                                <rect key="frame" x="97.5" y="311.5" width="179" height="44"/>
+                                <color key="backgroundColor" red="0.83101926810000004" green="0.11482182589999999" blue="0.1469301183" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="24"/>
+                                <color key="tintColor" red="0.61232560869999997" green="0.15239658950000001" blue="0.1211197898" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" title="Get a Quote">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getQuote:" destination="vmS-hP-5Rc" eventType="touchUpInside" id="vQa-69-PRt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwn-LT-CsG">
+                                <rect key="frame" x="160.5" y="268.5" width="54.5" height="18"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LzS-NF-99M" firstAttribute="centerX" secondItem="hJv-az-Urj" secondAttribute="centerX" id="D7b-Qg-Sg7"/>
+                            <constraint firstItem="P2T-d3-kVw" firstAttribute="bottom" secondItem="klp-xA-edU" secondAttribute="bottom" constant="42" id="ITc-DN-MTg"/>
+                            <constraint firstItem="LzS-NF-99M" firstAttribute="centerY" secondItem="hJv-az-Urj" secondAttribute="centerY" id="Kg6-BA-IgA"/>
+                            <constraint firstItem="P2T-d3-kVw" firstAttribute="trailing" secondItem="em8-AE-xsP" secondAttribute="trailing" constant="16" id="MFF-g3-WsF"/>
+                            <constraint firstItem="gwn-LT-CsG" firstAttribute="centerX" secondItem="hJv-az-Urj" secondAttribute="centerX" id="N4e-y5-oj1"/>
+                            <constraint firstItem="P2T-d3-kVw" firstAttribute="bottom" secondItem="em8-AE-xsP" secondAttribute="bottom" constant="42" id="ht4-Sg-52t"/>
+                            <constraint firstItem="LzS-NF-99M" firstAttribute="top" secondItem="gwn-LT-CsG" secondAttribute="bottom" constant="25" id="rNP-jn-aVm"/>
+                            <constraint firstItem="klp-xA-edU" firstAttribute="leading" secondItem="P2T-d3-kVw" secondAttribute="leading" constant="16" id="tey-Ms-8rA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="P2T-d3-kVw"/>
+                    </view>
+                    <connections>
+                        <outlet property="quoteLabel" destination="gwn-LT-CsG" id="c4W-vU-eSN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oAj-UV-oew" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2360.8000000000002" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Red Arrow Back" width="800" height="609"/>
+        <image name="Red Arrow Forward" width="800" height="609"/>
+        <image name="Stranger Things Cast" width="920" height="584"/>
+        <image name="Stranger Things Logo" width="300" height="162"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="4LE-t0-D1n"/>
+        <segue reference="iGH-zz-ZKf"/>
+        <segue reference="Ngg-Nr-SCq"/>
+    </inferredMetricsTieBreakers>
 </document>
