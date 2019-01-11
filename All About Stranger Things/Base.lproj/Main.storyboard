@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Courier.ttc">
-            <string>Courier</string>
-            <string>Courier-Bold</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -34,7 +28,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALL ABOUT " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubw-fZ-Hha">
-                                <rect key="frame" x="52" y="203" width="270.5" height="45"/>
+                                <rect key="frame" x="52.5" y="203" width="270.5" height="45"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="45"/>
                                 <color key="textColor" red="0.61232560873031616" green="0.15239658951759338" blue="0.12111978977918625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -192,7 +186,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAST" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHl-TV-7ll">
-                                <rect key="frame" x="52" y="30" width="270.5" height="55"/>
+                                <rect key="frame" x="52.5" y="30" width="270.5" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="3Bm-cS-ump"/>
                                     <constraint firstAttribute="width" constant="270.5" id="QcO-n1-Fj9"/>
@@ -202,14 +196,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stranger Things Cast" translatesAutoresizingMaskIntoConstraints="NO" id="u3c-wo-MTw">
-                                <rect key="frame" x="34" y="101" width="306" height="211"/>
+                                <rect key="frame" x="34.5" y="101" width="306" height="211"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="211" id="g04-jD-CTW"/>
                                     <constraint firstAttribute="width" constant="306" id="p6J-TI-zVR"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="9" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOP-Rw-xcN">
-                                <rect key="frame" x="37" y="322" width="300" height="166"/>
+                                <rect key="frame" x="37.5" y="322" width="300" height="166"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="oMb-0g-9Zu"/>
                                     <constraint firstAttribute="height" constant="166" id="s49-Wr-MUM"/>
@@ -281,7 +275,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LzS-NF-99M">
-                                <rect key="frame" x="97.5" y="311.5" width="179" height="44"/>
+                                <rect key="frame" x="98" y="311.5" width="179" height="44"/>
                                 <color key="backgroundColor" red="0.83101926810000004" green="0.11482182589999999" blue="0.1469301183" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="24"/>
                                 <color key="tintColor" red="0.61232560869999997" green="0.15239658950000001" blue="0.1211197898" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -293,8 +287,8 @@
                                     <action selector="getQuote:" destination="vmS-hP-5Rc" eventType="touchUpInside" id="vQa-69-PRt"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwn-LT-CsG">
-                                <rect key="frame" x="160.5" y="268.5" width="54.5" height="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwn-LT-CsG">
+                                <rect key="frame" x="40" y="268.5" width="295" height="18"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -303,11 +297,13 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="LzS-NF-99M" firstAttribute="centerX" secondItem="hJv-az-Urj" secondAttribute="centerX" id="D7b-Qg-Sg7"/>
+                            <constraint firstItem="gwn-LT-CsG" firstAttribute="leading" secondItem="P2T-d3-kVw" secondAttribute="leading" constant="40" id="EcR-IS-Xkr"/>
                             <constraint firstItem="P2T-d3-kVw" firstAttribute="bottom" secondItem="klp-xA-edU" secondAttribute="bottom" constant="42" id="ITc-DN-MTg"/>
                             <constraint firstItem="LzS-NF-99M" firstAttribute="centerY" secondItem="hJv-az-Urj" secondAttribute="centerY" id="Kg6-BA-IgA"/>
                             <constraint firstItem="P2T-d3-kVw" firstAttribute="trailing" secondItem="em8-AE-xsP" secondAttribute="trailing" constant="16" id="MFF-g3-WsF"/>
                             <constraint firstItem="gwn-LT-CsG" firstAttribute="centerX" secondItem="hJv-az-Urj" secondAttribute="centerX" id="N4e-y5-oj1"/>
                             <constraint firstItem="P2T-d3-kVw" firstAttribute="bottom" secondItem="em8-AE-xsP" secondAttribute="bottom" constant="42" id="ht4-Sg-52t"/>
+                            <constraint firstItem="P2T-d3-kVw" firstAttribute="trailing" secondItem="gwn-LT-CsG" secondAttribute="trailing" constant="40" id="k40-GJ-5tG"/>
                             <constraint firstItem="LzS-NF-99M" firstAttribute="top" secondItem="gwn-LT-CsG" secondAttribute="bottom" constant="25" id="rNP-jn-aVm"/>
                             <constraint firstItem="klp-xA-edU" firstAttribute="leading" secondItem="P2T-d3-kVw" secondAttribute="leading" constant="16" id="tey-Ms-8rA"/>
                         </constraints>
@@ -323,14 +319,15 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Red Arrow Back" width="800" height="609"/>
-        <image name="Red Arrow Forward" width="800" height="609"/>
+        <image name="Red Arrow Back" width="29.208925247192383" height="22.235294342041016"/>
+        <image name="Red Arrow Forward" width="29.208925247192383" height="22.235294342041016"/>
         <image name="Stranger Things Cast" width="920" height="584"/>
         <image name="Stranger Things Logo" width="300" height="162"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="abI-TS-CYI"/>
         <segue reference="4LE-t0-D1n"/>
-        <segue reference="iGH-zz-ZKf"/>
+        <segue reference="d3c-gS-MJn"/>
         <segue reference="Ngg-Nr-SCq"/>
     </inferredMetricsTieBreakers>
 </document>
