@@ -117,10 +117,9 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUMMARY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZN-3T-xp3">
-                                <rect key="frame" x="52.5" y="30" width="270.5" height="55"/>
+                                <rect key="frame" x="103.5" y="30" width="168.5" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="ZRR-Xk-8k0"/>
-                                    <constraint firstAttribute="width" constant="270.5" id="v1K-8g-LvM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="40"/>
                                 <color key="textColor" red="0.61232560869999997" green="0.15239658950000001" blue="0.1211197898" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -186,10 +185,9 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAST" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHl-TV-7ll">
-                                <rect key="frame" x="52.5" y="30" width="270.5" height="55"/>
+                                <rect key="frame" x="139.5" y="30" width="96.5" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="3Bm-cS-ump"/>
-                                    <constraint firstAttribute="width" constant="270.5" id="QcO-n1-Fj9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="40"/>
                                 <color key="textColor" red="0.61232560869999997" green="0.15239658950000001" blue="0.1211197898" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -284,7 +282,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="getQuote:" destination="vmS-hP-5Rc" eventType="touchUpInside" id="vQa-69-PRt"/>
+                                    <action selector="getQuote:" destination="vmS-hP-5Rc" eventType="touchUpInside" id="4P4-6y-HXg"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwn-LT-CsG">
@@ -310,7 +308,8 @@
                         <viewLayoutGuide key="safeArea" id="P2T-d3-kVw"/>
                     </view>
                     <connections>
-                        <outlet property="quoteLabel" destination="gwn-LT-CsG" id="c4W-vU-eSN"/>
+                        <outlet property="quoteLabel" destination="gwn-LT-CsG" id="vK8-0r-wOs"/>
+                        <outlet property="someFunction" destination="Kg6-BA-IgA" id="ON3-8O-dTy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oAj-UV-oew" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -325,7 +324,6 @@
         <image name="Stranger Things Logo" width="300" height="162"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="abI-TS-CYI"/>
         <segue reference="4LE-t0-D1n"/>
         <segue reference="d3c-gS-MJn"/>
         <segue reference="Ngg-Nr-SCq"/>
